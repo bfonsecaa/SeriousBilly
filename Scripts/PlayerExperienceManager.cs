@@ -15,7 +15,6 @@ public class PlayerExperienceManager : MonoBehaviour {
 
     public static int levelUpPoints = 0;
 
-	// Use this for initialization
 	void Start () {
         currentExp = 0;
         maxExp = 50;
@@ -23,7 +22,6 @@ public class PlayerExperienceManager : MonoBehaviour {
         expAudio = GetComponent<AudioSource>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
         expSlider.value = currentExp;
         expSlider.maxValue = maxExp;
